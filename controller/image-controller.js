@@ -3,6 +3,8 @@ import File from "../models/file.js";
 
 export const uploadImage = async (request, response) => {
     const fileObj = {
+         // return response.status(200).json({ msg: 'Hello'})
+   // console.log(request);
         path: request.file.path,
         name: request.file.originalname
     }
