@@ -16,7 +16,6 @@ const fileSchema = new mongoose.Schema({
     }
 })
 
-
 const File = mongoose.model('file', fileSchema);
 
 export default File;
