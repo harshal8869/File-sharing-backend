@@ -12,7 +12,8 @@ export const uploadImage = async (request, response) => {
     try {
         const file = await File.create(fileObj);
         response.status(200).json({ path: `https://harshal-zgq6.onrender.com/file/${file._id}`})
-    } catch (error) {
+    } 
+    catch (error) {
         console.error(error.message);
         response.status(500).json({ error: error.message });
     }
@@ -28,7 +29,8 @@ export const downloadImage = async (request, response) => {
         await file.save();
 
         response.download(file.path, file.name);
-    } catch (error) {
+    } 
+    catch (error) {
         console.error(error.message);
         return response.status(500).json({ error: error.message });
     }
