@@ -7,7 +7,7 @@ const fileSchema = new mongoose.Schema({
     },
     name: { 
         type: String,
-        required: true
+        required: true  
     },
     downloadContent: {
         type: Number,
