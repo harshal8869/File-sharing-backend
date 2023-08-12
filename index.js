@@ -1,7 +1,7 @@
 import express from 'express';
 import router from './routes/routes.js';
-import cors from 'cors';
-import DBConnection from './database/db.js';
+import cors from 'cors'
+import DBConnection from './database/db.js'
 
 
 
