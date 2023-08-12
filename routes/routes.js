@@ -8,4 +8,4 @@ const router = express.Router();
 router.post('/upload', upload.single('file'), uploadImage);
 router.get('/file/:fileId', downloadImage);
 
-export default router
+export default 
