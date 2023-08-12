@@ -5,7 +5,7 @@ import DBConnection from './database/db.js';
 
 
 
-const app = express();
+const app =
 
 app.use(cors());  
 app.use('/', router);
