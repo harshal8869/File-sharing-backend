@@ -8,6 +8,7 @@ import DBConnection from './database/db.js';
 const app = express();
 
 app.use(cors());  
+
 app.use('/', router);
 
 const PORT = 8000;
